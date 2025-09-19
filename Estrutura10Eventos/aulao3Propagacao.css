@@ -1,0 +1,12 @@
+body{
+    margin-bottom: 1000px;
+}
+#btn-container{
+    padding: 30px;
+    background-color: green;
+    /**
+    a area verde aqui,ela tem um evento. Ao clicar no verde..
+    
+    o problema aqui e assim: quando voce click no verde tem um evento ( evento 1 ) , mas quando voce clica no btn que esta dentro do verde(div) o mesmo evento acontece no btn.
+    .. PARA RESOLVER  adicione no js */
+}
