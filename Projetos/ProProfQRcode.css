@@ -1,0 +1,82 @@
+@charset "UTF-8";
+*{
+    margin: o;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    display: flex;/*este conteiner vai ser centralizado no body*/
+    align-items: center;
+    justify-content: center;/*agora sim foi pro centro*/
+    min-height: 100vh;/*altura minima de 100% da tela-- centralizou */
+    background-color: #34db7a; /*fundo */
+    
+}
+.container{
+    background-color: white;
+    height: 260px;/*de altura*/
+    width: 400px;/*largura*/
+    border-radius: 10px;/*quebra os cantos*/
+    padding: 20px;/*espaçamento entre os elementos*/
+    transition: 0.2s;/*aqui ,vamos usar este efeito para mostrar o QRCODE e depois retira */
+
+}
+.container.active{/*quando o conteiner estiver ativo vai ter este tamanho*/
+    height: 500px;/*de altura*/
+    
+}
+#qr-header{
+    text-align: center;
+
+}
+#qr-header h1{
+    font-size: 1.8rem;/*tamanho fonte*/
+    margin-bottom: 10px;/*espaçamento entre as palavras*/
+
+}
+#qr-header p{
+    color: gray;
+    font-size: 0.9rem;
+    
+}
+/*form*/
+#qr-form{
+    margin: 20px 15px;
+}
+#qr-form input,
+
+#qr-form button{
+    width: 100%;
+    height: 55px;/*altura (cx-engordaram)*/
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+
+}
+/*depois isoladamente*/
+#qr-form input{
+    border: 1px solid #777;
+    padding: 10px 15px;/*gerar espaçamento interno,entre o txt e o botao*/
+
+}
+#qr-form button{
+    background-color: #086824;
+    color: white;
+    font-size: 1.2rem;
+    margin-top: 20px;/*descolamento do botao da cx de input*/
+    cursor: pointer;
+    opacity: 0.9;/*vamos aumemtar a opacidade no houver*/
+    transition: 0.4s;
+}
+#qr-form button:hover{
+    opacity: 2;
+}
+/*qr code*/
+#qr-code{
+    display: flex;
+    opacity: 0;/*invisivel*/
+}
+.container.active #qr-code{
+    opacity: 1;/*vsivel*/
+}
