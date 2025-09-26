@@ -76,7 +76,17 @@ body{
 #qr-code{
     display: flex;
     opacity: 0;/*invisivel*/
+    border: 1px solid #ccc;/*borda cinza para separar as sessoes*/
+    border-radius: 5px;
+    padding: 30px 0;
+    margin: 20px 15px;/*acertou o desenho da frase*/
+    transition: 0.5s;
+
+    display: flex;/*vamos alinhar a imagem*/
+    justify-content: center;/*agora centralizamos a imagem*/
+    
 }
 .container.active #qr-code{
     opacity: 1;/*vsivel*/
 }
+
