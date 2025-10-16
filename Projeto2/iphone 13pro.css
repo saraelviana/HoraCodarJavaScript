@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*vamos trabalhar as listas*/
+ul{
+    text-decoration: none;/*retirar qualquer efeito*/
+
+}
+
+/*Todos os links*/
+a{
+    text-decoration: none;/*retirar qualquer efeito*/
+}
+
+/*vamos trabalhar a barra de navegação*/
+
+header nav {
+    background-color: #333;
+}
+
+/*e nalista, vai colocar um do lado do outro*/
+#navbar{
+    display: flex;
+    justify-content: space-around; /*vai criar um espaçamento entre si*/
+    align-items: center;/*alinhar os itens*/
+    font-size: 0.7rem;
+    padding: 0 1rem;/*somente nas laterais*/
+    max-width: 1000px;/*largura maxima*/
+    margin: 0 auto;/*conseguimos centralizar isso assim*/
+
+}
+/*vamos mexer nos links agora*/
+#navbar a {
+    color: #f5f5f7;
+    transition: .5s;
+
+}
+/*esta transition e por causa do hover abaixo*/
+#navbar a:hover{
+    color: white;
+}
+/*trabalhar no cabeçalho superior*/
+#bottom-header{
+    font-size: .9rem;/*fonte*/
+    padding: 1rem;/*pra afastar dos cantos*/
+    border-bottom: 1px solid #ccc;/*uma borda em baixo pra dividir cabeçalho e conteudo*/
+
+
+}
+/*titulo do iphone*/
+#bottom-header h3{
+    font-size: 1.2rem;
+
+}
+/*agora,todos os links desta area*/
+#bottom-header a {
+    color: #333;
+}
+/*vamos trabalhar no conteudo central*/
+#bottom-header-inner {
+    max-width:1000px ;/*largura maxima*/
+    margin: 0 auto;/*pra centralizar*/
+    display: flex;
+    /*tem que colocar a palavra iphone 13 para um lado e os links para o outro com o > justify-content: space-between*/
+    justify-content: space-between;/*agora um vai para esquerda e outro direita*/
+    align-items: center;/*pra gerar um alinhamento vertical em todos os itens*/
+
+
+
+}
+bottom-header-inner a{
+    margin: 0 0.5rem;
+}
+
