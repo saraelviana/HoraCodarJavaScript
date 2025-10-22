@@ -6,7 +6,7 @@
 
 /*vamos trabalhar as listas*/
 ul{
-    text-decoration: none;/*retirar qualquer efeito*/
+    list-style: none;/*retirar qualquer efeito*/
 
 }
 
@@ -23,7 +23,7 @@ header nav {
 
 /*e nalista, vai colocar um do lado do outro*/
 #navbar{
-    display: flex;
+    display: flex;/*colocar 1 item do lado do outro*/
     justify-content: space-around; /*vai criar um espaçamento entre si*/
     align-items: center;/*alinhar os itens*/
     font-size: 0.7rem;
@@ -60,18 +60,23 @@ header nav {
     color: #333;
 }
 /*vamos trabalhar no conteudo central*/
-#bottom-header-inner {
-    max-width:1000px ;/*largura maxima*/
-    margin: 0 auto;/*pra centralizar*/
-    display: flex;
+
+#botton-header-inner{
     /*tem que colocar a palavra iphone 13 para um lado e os links para o outro com o > justify-content: space-between*/
-    justify-content: space-between;/*agora um vai para esquerda e outro direita*/
+    display: flex;
     align-items: center;/*pra gerar um alinhamento vertical em todos os itens*/
+    margin: 0 auto;/*pra centralizar*/
+    max-width:1000px ;/*largura maxima*/
+    justify-content: space-between;/*agora um vai para esquerda e outro direita*/
 
-
+    
+    
 
 }
+
 bottom-header-inner a{
     margin: 0 0.5rem;
 }
 
+
+ 
