@@ -59,6 +59,7 @@ header nav {
 #bottom-header a {
     color: #333;
 }
+
 /*vamos trabalhar no conteudo central*/
 
 #botton-header-inner{
@@ -74,9 +75,147 @@ header nav {
 
 }
 
-bottom-header-inner a{
+#bottom-header-inner a{
     margin: 0 0.5rem;
+}
+#bottom-header-inner .btn , .btn {
+    background-color: #0071e3;
+    border-radius: 10rem;
+    padding: 0.4rem  1rem ;
+    color: #fff;
+}
+
+/*conteudo*/
+#ribbon {
+    text-align: center;/*este conteudo: pague logo sua divida SAIBA MAIS*/
+    padding: 1rem;/*espaçamento */
+    background-color: #f5f5f7;/*uma tarja*/
+    color: black;
+    font-size: 0.8rem;
+
+}
+/*trabalhar o link do ribbon*/
+#ribbon a{
+    background-color: #0071e3;
+    color: white;
+    border-radius: 10rem;
+    padding: .4rem  1rem ;
+
+}
+
+#main-content{
+    /*aqui que formatou tudo */
+    text-align: center; /*alinhou tudo ao centro*/
+    color: #1d1d1d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+     
+     
+}
+#main-content  #title{
+    margin: 1rem;/*pra afastar os elementos*/
+    font-size: 1.2rem;
+
+
+}
+#main-content #subtitle{
+    margin: 1rem;
+    font-size: 4rem;
+    font-weight: bold;/*negrito*/
+
+}
+#main-content #description{
+    max-width: 600px;/*nao ocupar a tela*/
+    margin: 1rem auto;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+
+}
+#main-content #price{
+    font-size: 1.3rem;
+    color: #86868b;
+    margin: 2rem;
+
+
+}
+#main-content .btn{
+    font-size: 1.1rem;
+    padding: 0.8rem 1.4rem;/*espaçamento interno do botao, ele fica um pouco grande*/
+    align-self: center;
+
+
+
+}
+/*estilizar a imagem*/
+#main-content #product-image{
+    max-width: 1000px;/*tamanho da imagem*/
+    margin: 3rem auto;
+    opacity: 1;/*quando for fazer a troca da imagem em js vai voltar ao normal*/
+    transition: .5s;/*animação*/
+
+
+}
+/*vamos fazer uma regra */
+#main-content #product-image.changing{
+    opacity: 0.5;
+
+
+}
+
+#image-picker{
+    margin-bottom: 500px;/*ganhar uma area*/
+}
+
+#image-picker ul{
+    display: flex;
+    justify-content: center;
+}
+
+#image-picker li{
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+
+}
+/*as cores*/
+#image-picker li .color{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;/*para dar o efeito de bola mesmo*/
+    /*background-color: #333;/* era so pra enxergar no decorrer do trabalho*/
+}
+
+/*o textinho em baixo*/
+#image-picker li .description{
+    font-size: .7rem;
+    color: #1d1d1d;
+    margin-top: .6rem;/*pra afastar da bolinha*/
+
+
+}
+
+#green .color{
+    background-color: #394c39;/*vai se repetir */
+
+}
+#Silver .color{
+    background-color: #f1f2ed;/*vai se repetir */
+
+}
+#golden .color{
+    background-color: #fae7cf;/*vai se repetir */
+
+}
+#grafite .color{
+    background-color: #44524f;/*vai se repetir */
+
+}
+#blue .color{
+    background-color: #a7c1d9;/*vai se repetir */
+
 }
 
 
- 
