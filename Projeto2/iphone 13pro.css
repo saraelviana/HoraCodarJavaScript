@@ -150,7 +150,7 @@ header nav {
 /*estilizar a imagem*/
 #main-content #product-image{
     max-width: 1000px;/*tamanho da imagem*/
-    margin: 3rem auto;
+    margin: 3rem auto;/* as laterias no automtico*/
     opacity: 1;/*quando for fazer a troca da imagem em js vai voltar ao normal*/
     transition: .5s;/*animação*/
 
@@ -168,7 +168,7 @@ header nav {
 }
 
 #image-picker ul{
-    display: flex;
+    display: flex; /*pra deixa um do lado do outro*/
     justify-content: center;
 }
 
@@ -186,6 +186,12 @@ header nav {
     height: 2rem;
     border-radius: 50%;/*para dar o efeito de bola mesmo*/
     /*background-color: #333;/* era so pra enxergar no decorrer do trabalho*/
+    /*tem que colocar um box-shadow nas cores mas claras,para ter melhor visualização*/
+    box-shadow: 1px 1px 1px;
+    border: 1px solid #ffbdbd;
+    pointer-events: none;
+    /*eu nao quero que espalhe evento nenhum,quando clicar na bolinha,quero que o evento seja no LI todo*/
+
 }
 
 /*o textinho em baixo*/
@@ -193,9 +199,12 @@ header nav {
     font-size: .7rem;
     color: #1d1d1d;
     margin-top: .6rem;/*pra afastar da bolinha*/
+    
+    
 
 
 }
+
 
 #green .color{
     background-color: #394c39;/*vai se repetir */
@@ -217,5 +226,48 @@ header nav {
     background-color: #a7c1d9;/*vai se repetir */
 
 }
+
+/*
+.selected{
+    
+    outline: 2px solid rgb(181, 181, 253);
+}
+    nao funciona por que se eu ativar no html ele buga o codigo
+
+*/
+
+/*aqui vai ser configuração com celular*/
+@media (max-width:480px){/*para telas menores que 480px ja que esta e a maxima*/
+
+    /*vamos ter um display */
+    #navbar li{
+        display: none;/*desta maneira a logo somo,tem que fazer uma regra para impedir,vamos la*/ 
+
+    }
+    #navbar #logo{
+        display: flex;/*aqui a logo e exibida e a navbar volta*/
+
+    }
+    #bottom-header-links a{
+        display: none;/*some todos os links,*/
+    }
+    #bottom-header-links .btn{
+        display: flex;/*voltou o botao de compra*/
+    }
+    /*vamos resolver o  problema da imagem*/
+    /*vamos trabalhar com o elemento pai*/
+    #main-content{
+        padding: 2rem;/*fica as informaçoes de texto*/
+        overflow: hidden;/*que tudo que for maio k a pagina,nao contar*/
+
+    }
+    #main-content #subtitle{
+        font-size:3rem ;
+        
+    }
+
+
+}
+
 
 
