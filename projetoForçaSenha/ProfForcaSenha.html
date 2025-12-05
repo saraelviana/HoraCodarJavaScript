@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProfForcaSenha</title>
+    <link rel="stylesheet" href="ProfForcaSenha.css">
+    <script src="ProfForcaSenha.js" defer></script>
+    <!-- defer para poder carregar primeiro o html-->
+</head>
+<body>
+    <div class="container">
+        <!-- para abraçar todos os elementos-->
+         <h2>verificar de força de senha</h2>
+         <p>insira uma senha para verificação</p>
+         <input type="password" id="passwordInput" placeholder="digite a senha aqui mane" >
+         <!-- debaixo dele vai ter aquela barra de força para medir-->
+          <div class="password-strength-bar">
+            <!-- aqui vai ser a outra barrinha que vai estar se mexendo-->
+             <div id="password-strength-indicador" class="strength-indicador"></div>
+                <!-- porque tem id e class, para uma extrategia-->
+                 <!-- a class e para o css e id para o js -->
+
+          </div>
+          <p id="password-strength-text"></p><!-- valor textua ,senha- fraca,media,forte-->
+          <p id="tip "> sua senha precisa ter letras minusculas,simbolos,numero</p>
+          
+    </div>
+
+    
+</body>
+</html>

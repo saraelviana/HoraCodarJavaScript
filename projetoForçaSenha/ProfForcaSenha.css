@@ -1,0 +1,68 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(233, 134, 5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container{
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 400px;
+}
+h2{
+    color: #333;
+}
+
+input[type=password]{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;/*assim os input respeitam a largura do container*/
+    border: 2px solid rgb(96, 238, 238);/*borda*/
+    border-radius: 4px;
+    margin: 15px 0;/*descolar da barra*/
+
+}
+.password-strength-bar{
+    width: 100%;
+    height: 20px;
+    background-color: blueviolet;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 3px rgba(241, 239, 239, 0.2);
+    overflow: hidden;/*para nao vazar nada deste elemento,para as cores preencherem as cores da borda*/
+
+
+}
+.strength-indicador{
+    height: 100%;
+    width: 0;/*a largura vai vim pelo js*/
+    background-color: red;/*cor de fundo inicial -senha fraca*/
+    transition: width 0.5s ease background-color 0.3s ease;/*na largura e na cor de fundo*/
+    /*
+    colocou uma transicao para a largura e a cor de fundo, com duracao de 0.5s segundos e um efeito de ease (suave) quando a largura ou a cor de fundo mudarem.
+    */
+    /*transition: width 0.3s ease-in-out;/* na largura*/
+
+
+}
+#password-strength-text{
+    color: #333;
+    font-size: 0.8rem;
+
+}
+#tip{
+    font-style: italic;/*como se fosse uma dica mesmo*/
+    color: #666;
+    font-size: 0.6rem;
+    max-width: 70%;
+    margin: 0 auto 10px;/*centralizar o texto*/
+}
+
+
+
